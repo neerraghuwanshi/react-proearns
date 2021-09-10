@@ -1,0 +1,60 @@
+.container{
+    min-height: 90vh;
+    margin-top: 10vh;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.para{
+    width: 90vw;
+    margin: 10px 0;
+    font-size: .8rem;
+    font-family: 'Roboto Mono', monospace;
+}
+
+
+@media (max-height: 400px){
+    .container{
+        margin-top: 40px;
+    }
+}
+
+@media (min-width: 400px){
+    .para{
+        font-size: .9rem;
+    }
+}
+
+@media (min-width: 768px){
+    .para{
+        width: 80vw;
+    }
+}
+
+@media (min-width: 992px){
+    .para{
+        width: 70vw;
+    }
+}
+
+@media (min-width: 1200px){
+    .para{
+        width: 60vw;
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 1600px){
+    .para{
+        font-size: 1.2rem;
+    }
+}
+
+@media (min-width: 1800px){
+    .para{
+        font-size: 1.3rem;
+    }
+}

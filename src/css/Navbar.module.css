@@ -1,0 +1,111 @@
+@keyframes navslide {
+    from{
+        transform: translateY(-10vh);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes menuSlideUp {
+    from{
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-100vh);
+    }
+}
+
+@keyframes menuSlideDown {
+    from{
+        transform: translateY(-100vh);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+#navFirstDiv{
+    min-height: 40px;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color:#C2185B;
+    width:100vw;
+    height:10vh;
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: 3;
+}
+
+.smallFlex{
+    justify-content: flex-start !important;
+}
+
+.menu{
+    min-height: 400px;
+    height: 90vh;
+    width: 100vw;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #C2185B;
+    position: absolute;
+    top:10vh;
+    left: 0;
+    z-index: 1;
+    transform: translateY(-100vh);
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+}
+
+.menuUp {
+    animation-name: menuSlideUp;
+}
+
+.menuDown{
+    animation-name: menuSlideDown;
+}
+
+.navAnimation {
+    animation-name: navslide;
+    animation-duration: 2s;
+    animation-delay: 4s;
+    animation-fill-mode: backwards;
+}
+
+
+@media (max-height: 400px){
+    .menu{
+        transform: translateY(-400px);
+    }
+
+    @keyframes navslide {
+        from{
+            transform: translateY(-40px);
+        }
+        to {
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes menuSlideUp {
+        from{
+            transform: translateY(0);
+        }
+        to {
+            transform: translateY(-400px);
+        }
+    }
+
+    @keyframes menuSlideDown {
+        from{
+            transform: translateY(-400px);
+        }
+        to {
+            transform: translateY(0);
+        }
+    }
+}

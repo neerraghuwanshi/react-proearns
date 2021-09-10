@@ -1,0 +1,90 @@
+@keyframes firstCross{
+    to {
+        transform: rotateZ(45deg);
+        width: 25px;
+        margin-bottom: -1.7px;
+    }
+}
+
+@keyframes firstMenu{
+    from {
+        transform: rotateZ(45deg);
+        width: 25px;
+        margin-bottom: -1.7px;
+    }
+    to {
+        transform: rotateZ(0);
+        width: 20px;
+    }
+}
+
+@keyframes lastCross{
+    to {
+        transform: rotateZ(-45deg);
+        width: 25px;
+    }
+}
+
+@keyframes lastMenu{
+    from {
+        transform: rotateZ(-45deg);
+        width: 25px;
+    }
+    to {
+        transform: rotateZ(0);
+        width: 20px;
+    }
+}
+
+.container{
+    padding: 10px;
+    position: relative;
+    top: 0px;
+    z-index: 2;
+    left:5vw;
+}
+
+.container:hover{
+    cursor: pointer;
+}
+
+.bar{
+    width: 20px;
+    height: 2px;
+    background-color: #fff;
+}
+
+.first{
+    margin-bottom: 7.5px;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.last{
+    animation-duration: 1s;
+    animation-fill-mode: forwards
+}
+
+.container:hover .first{
+    background-color: rgb(82, 180, 236);
+}
+
+.container:hover .last{
+    background-color: rgb(82, 180, 236);
+}
+
+.firstMenu{
+    animation-name: firstMenu;
+}
+
+.lastMenu{
+    animation-name: lastMenu;
+}
+
+.firstCross{
+    animation-name: firstCross;
+}
+
+.lastCross{
+    animation-name: lastCross;
+}

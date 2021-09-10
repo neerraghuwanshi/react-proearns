@@ -1,0 +1,67 @@
+.heading{
+    padding: 0;
+    margin: 10px 0 10px 0;
+    font-size: 1.4rem;
+}
+
+.listItem{
+    padding: 0;
+    margin-bottom: 10px;
+    list-style-type: circle;
+    font-size: .7rem;
+}
+
+
+@media (min-width: 400px){
+    .heading{
+        font-size: 1.6rem;
+    }
+    .listItem{
+        font-size: .8rem;
+    }
+}
+
+@media (min-width: 776px){
+    .heading{
+        font-size: 1.8rem;
+    }
+    .listItem{
+        font-size: .9rem;
+    }
+}
+
+@media (min-width: 992px){
+    .heading{
+        font-size: 2rem;
+    }
+    .listItem{
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 1200px){
+    .heading{
+        font-size: 2.2rem;
+    }
+    .listItem{
+        font-size: 1.1rem;
+    }
+}
+
+@media (min-width: 1600px){
+    .heading{
+        font-size: 2.4rem;
+    }
+    .listItem{
+        font-size: 1.2rem;
+    }
+}
+
+@media (min-width: 1800px){
+    .heading{
+        font-size: 2.6rem;
+    }
+    .listItem{
+        font-size: 1.3rem;
+    }
+}
