@@ -49,6 +49,16 @@ export default class Contact extends Component {
                         </a>
                     </div>
 
+                    <div className={row}>
+                        <a target={'_blank'} className={link} rel="noopener noreferrer" href={'https://twitter.com/__Neer__'}>
+                            <i className={
+                                `${'fab fa-twitter'} ${icon}`
+                            }>
+                            </i>
+                            __Neer__
+                        </a>
+                    </div>
+
                 </div>
             </div>
         )

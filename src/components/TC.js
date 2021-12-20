@@ -1,11 +1,13 @@
 import React from 'react'
+
+import termsAndConditions from '../data/termsAndConditions'
 import PolicyFetcher from './PolicyFetcher'
 
 
 function TC() {
     return (
         <PolicyFetcher 
-            url='get_tc'/>
+            data={termsAndConditions}/>
     )
 }
 

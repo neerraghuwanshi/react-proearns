@@ -1,11 +1,13 @@
 import React from 'react'
+
+import privacyPolicy from '../data/privacyPolicy'
 import PolicyFetcher from './PolicyFetcher'
 
 
 function PrivacyPolicy() {
     return (
         <PolicyFetcher 
-            url='get_pp'/>
+            data={privacyPolicy}/>
     )
 }
 

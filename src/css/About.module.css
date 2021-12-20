@@ -15,6 +15,15 @@
     font-family: 'Roboto Mono', monospace;
 }
 
+.link{
+    color: rgb(82, 180, 236);
+    text-decoration: none;
+}
+
+.link:hover{
+    color: rgb(82, 180, 236);
+}
+
 
 @media (max-height: 400px){
     .container{

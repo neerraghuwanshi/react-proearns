@@ -3,9 +3,7 @@ import React from 'react'
 import styles from'../css/PolicyContent.module.css'
 
 
-function PolicyContent(props) {
-
-    const { data } = props
+function PolicyContent({ data }) {
 
     const mappingSubHeading = key => (
         data[key].map(item => (

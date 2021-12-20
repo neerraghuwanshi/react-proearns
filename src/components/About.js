@@ -1,24 +1,41 @@
 import React, { Component } from 'react'
+
 import styles from '../css/About.module.css'
 
-export default class AboutMe extends Component {
+
+export default class About extends Component {
     render() {
         return (
             <div className={styles.container}>
                 <p className={styles.para}>
-                    Neer Raghuwanshi founded Proearns with a vision to optimize advertisement pricing.
+                    Proearns is a mobile app started by Neer Raghuwanshi as a hobby project with serious goals in September 2020 with an idea of getting paid for watching advertisements.
                 </p>
+
                 <p className={styles.para}>
-                    Proearns, an app where one can advertise on their price and the other gets paid the amount promised to watch the ad.
+                    The Business name (Proearns) and app icon is registered with a trademark.
                 </p>
+
                 <p className={styles.para}>
-                    No one is interested to watch ads for free. But with proearns the same individual's motive is money so they watch full ad to get the reward.
+                    Proearns, an app where one can advertise on their price and others get paid the amount promised to watch the ad on first come first server basis.
                 </p>
+
                 <p className={styles.para}>
-                    Ads are annoying when they interrupt your mean time, you don't focus on the ad and get irritated. But when the focus and motive is changed you want to watch ads.
+                    We are working on extending Proearns with new ideas, features user feedback and interaction. Proearns has great scopes and opportunities in the near future.
                 </p>
+
                 <p className={styles.para}>
-                    On other platforms advertisors have to pay high for interested users and on ads which play for more than 30 seconds, the ads cost gets very high. On Proearns its not the case, its you deciding the reward for the user and hence you deciding the cost of ad.
+                    Currently Proearns is available only for Android but we are working for releasing it to iOS as well.
+                    Here is the Android app,
+                    <a 
+                        target={'_blank'} 
+                        className={styles.link} 
+                        rel="noopener noreferrer"
+                        href='https://play.google.com/store/apps/details?id=com.proearns'>
+                        {' Proearns'}
+                    </a>.
+                </p>
+
+                <p className={styles.para}>
                 </p>
             </div>
         )
